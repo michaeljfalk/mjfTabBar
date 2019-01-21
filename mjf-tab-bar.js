@@ -24,6 +24,18 @@
                     $('#'+settings.tabBarId+' .mjfTab').removeClass('mjfTabActive mjfTabInactive').addClass('mjfTabInactive');
                     clickedTab.toggleClass('mjfTabInactive mjfTabActive');
 
+                    if (settings.activeTabColor) {
+                        $('.mjfTab.mjfTabActive').css({
+                            backgroundColor: settings.activeTabColor
+                        });
+                    }
+
+                    if (settings.inActiveTabColor) {
+                        $('.mjfTab.mjfTabInactive').css({
+                            backgroundColor: settings.inActiveTabColor
+                        });
+                    }
+
                     var tabId = clickedTab.attr('id'),
                         tabIndex = parseInt(clickedTab.data('index')),
                         tabText = clickedTab.text(),
@@ -83,6 +95,13 @@
 
                 // Attach the style element to the document head
                 document.getElementsByTagName('head')[0].appendChild(styleElement);
+
+                if (settings.activeTabColor) {
+                    $('.mjfTab.mjfTabActive').css({
+                        backgroundColor: settings.activeTabColor
+                    });
+                }
+
             }
         };
 

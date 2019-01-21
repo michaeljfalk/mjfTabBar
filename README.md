@@ -12,6 +12,8 @@ In your onRendered or onCreated helpers (or wherever)...
 	$('#myTabBar').mjfTabBar({
             tabBarId: 'String value', //optional
             tabs: ['tab1', 'tab2', 'etc...'],
+            activeTabColor: 'rgba() or hex',
+            inActiveTabColor: 'rgba() or hex',
     
             onSelect: function(data) { //optional
                 ...do something here with 'data' if you please...

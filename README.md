@@ -14,8 +14,9 @@ In your onRendered or onCreated helpers (or wherever)...
             tabs: ['tab1', 'tab2', 'etc...'],
             activeTabColor: 'rgba() or hex', //optional
             inActiveTabColor: 'rgba() or hex', //optional
+            inActiveHoverTabColor: 'rgba() or hex', //optional
     
-            onSelect: function(data) { //optional
+            onSelect: function(data) { //optional... but what good would it be without any action...? ;)
                 ...do something here with 'data' if you please...
             }
         });

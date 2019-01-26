@@ -38,9 +38,11 @@
 
                     if (settings.inActiveHoverTabColor) {
                         $('.mjfTab.mjfTabInactive').hover(function(){
-                            $(this).css("background-color", settings.inActiveHoverTabColor);
+                            if ($(this).hasClass('mjfTabInactive')) {
+                                $(this).css("background-color", settings.inActiveHoverTabColor);
+                            }
                         }, function(){
-                            $(this).css("background-color", settings.inActiveTabColor);
+                            $('.mjfTab.mjfTabInactive').css("background-color", settings.inActiveTabColor);
                         });
                     }
 
@@ -112,9 +114,11 @@
 
                 if (settings.inActiveHoverTabColor) {
                     $('.mjfTab.mjfTabInactive').hover(function(){
-                        $(this).css("background-color", settings.inActiveHoverTabColor);
+                        if ($(this).hasClass('mjfTabInactive')) {
+                            $(this).css("background-color", settings.inActiveHoverTabColor);
+                        }
                     }, function(){
-                        $(this).css("background-color", settings.inActiveTabColor);
+                        $('.mjfTab.mjfTabInactive').css("background-color", settings.inActiveTabColor);
                     });
                 }
 

@@ -1,6 +1,6 @@
 Package.describe({
     name: 'michaelfalk:mjf-tab-bar',
-    version: '1.0.5',
+    version: '1.0.85',
     summary: 'Creates a basic tab bar inside the associated div element',
     git: 'https://github.com/michaeljfalk/mjfTabBar.git',
     documentation: 'README.md'

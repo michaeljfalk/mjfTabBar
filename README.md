@@ -55,4 +55,4 @@ Creates a basic tab bar inside the associated div element
  
     Tab Orientation (ie. Top, Left, Right...) Currently it places the tabs at the bottom# mjfTabBar
 
-![Screenshot](screenShot.png)
+![Screenshot](mjf-tabBar-screenShot.png)

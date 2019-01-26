@@ -33,6 +33,16 @@ Creates a basic tab bar inside the associated div element
 
 ## Example:
  
+ In your HTML...
+ 
+     <div id="tabBodyDiv">  //Create a body <div> which you can style with CSS 
+        {{> Template.dynamic template=tabBoxTab}} //It works well with dynamic templates (tabBoxTab will be the the helper function that sets which template to load) 
+     </div>
+     <div id="myTabBar"></div>  //The div where you will attach the tabs and style with CSS to match your body <div>
+
+ 
+ In your helpers (onRendered or onCreated)
+ 
      $('#myTabBar').mjfTabBar({
             tabBarId: 'String value', //optional
             tabs: ['tab1', 'tab2', 'etc...'],
@@ -40,9 +50,17 @@ Creates a basic tab bar inside the associated div element
             inActiveTabColor: 'rgba() or hex', //optional
             
             onSelect: function(data) { //optional
-                ...do something here with 'data' if you please...
+                Session.set('whichTab', data.id); // I then create templates and name them the same as the ID's of the tabs for ease
             }
         });
+        
+In your helpers...
+    
+    Template.someTemplate.helpers({
+        whichTab: function(){
+            return Session.get('whichTab');  // Loads the template name (tab ID) we assigned on the onSelect...
+        }
+    });
 
 
  If no "tabBarId" is provided in the "tabBarId" option a unique value will be created automatically

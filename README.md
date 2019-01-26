@@ -2,6 +2,10 @@
 
 Creates a basic tab bar inside the associated div element.  You still need to create the body of the tab (the section above the tab) as illustrated in the screenshot which you can change with the selection of each tab.
 
+Basic tabs without any body attached yet...
+![Screenshot](screenShot2.png)
+
+Example of basic tabs with a body styled to match tabs...
 ![Screenshot](mjf-tabBar-screenShot.png)
 
 ## Install

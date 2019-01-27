@@ -21,7 +21,8 @@ In your onRendered or onCreated helpers (or wherever)...
             activeTabColor: 'rgba() or hex', //optional
             inActiveTabColor: 'rgba() or hex', //optional
             inActiveHoverTabColor: 'rgba() or hex', //optional
-    
+            tabFontSize: 'XXpx', //optional (px or any font-size variation allowed by CSS rules)
+
             onSelect: function(data) { //optional... but what good would it be without any action...? ;)
                 ...do something here with 'data' if you please...
             }

@@ -48,6 +48,7 @@ Creates a basic tab bar inside the associated div element
             tabs: ['tab1', 'tab2', 'etc...'],
             activeTabColor: 'rgba() or hex', //optional
             inActiveTabColor: 'rgba() or hex', //optional
+            tabFontSize: '15px', //optional (any font-size variation allowed by CSS rules)
             
             onSelect: function(data) { //optional
                 Session.set('whichTab', data.id); // I then create templates and name them the same as the ID's of the tabs for ease
